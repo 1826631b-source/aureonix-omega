@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Aureonix Omega | Gestion del Conocimiento Cientifico</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark">AO</span>
+        <span>Proyecto Aureonix Omega</span>
+      </a>
+      <nav class="nav" aria-label="Navegacion principal">
+        <a href="#vision">Vision</a>
+        <a href="#modulos">Modulos</a>
+        <a href="#arquitectura">Arquitectura</a>
+        <a href="#calidad">Calidad</a>
+        <a href="#archivos">Archivos</a>
+        <a href="#colaborador-ia">IA</a>
+        <a href="#base-local">Base local</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <img class="hero-image" src="research-hero.png" alt="Red de datos cientificos conectados para investigacion y desarrollo" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Segundo cerebro para investigacion</p>
+          <h1>Proyecto Aureonix Omega</h1>
+          <p class="hero-copy">
+            Plataforma web para almacenar, organizar, buscar, relacionar y expandir conocimiento cientifico con ayuda de
+            inteligencia artificial, preparada para miles de documentos, proyectos y notas enlazadas.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#modulos">Explorar modulos</a>
+            <a class="button secondary" href="#arquitectura">Ver arquitectura</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section overview" id="vision">
+        <div class="section-heading">
+          <p class="eyebrow">Vision del sistema</p>
+          <h2>Una plataforma modular para convertir informacion dispersa en conocimiento accionable.</h2>
+        </div>
+        <div class="metrics" aria-label="Indicadores de diseno">
+          <article>
+            <strong>IA</strong>
+            <span>chat con contexto propio</span>
+          </article>
+          <article>
+            <strong>pgvector</strong>
+            <span>busqueda semantica</span>
+          </article>
+          <article>
+            <strong>S3</strong>
+            <span>archivos escalables</span>
+          </article>
+        </div>
+        <div class="content-grid">
+          <article class="info-card">
+            <span class="icon">01</span>
+            <h3>Gestion del conocimiento</h3>
+            <p>
+              Centraliza libros, articulos, PDFs, notas, referencias y proyectos para que cada hallazgo pueda ser
+              consultado, reutilizado y conectado con nuevas ideas.
+            </p>
+          </article>
+          <article class="info-card">
+            <span class="icon">02</span>
+            <h3>Investigacion estructurada</h3>
+            <p>
+              Cada investigacion conserva titulo, resumen, hipotesis, objetivos, materiales, metodos, resultados,
+              discusion, conclusiones, referencias y archivos asociados.
+            </p>
+          </article>
+          <article class="info-card">
+            <span class="icon">03</span>
+            <h3>Desarrollo continuo</h3>
+            <p>
+              La plataforma se plantea como un producto vivo: modular, seguro, documentado y preparado para crecer sin
+              perder orden tecnico.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section module-section" id="modulos">
+        <div class="section-heading compact">
+          <p class="eyebrow">Funcionalidades principales</p>
+          <h2>Los modulos base de Aureonix Omega.</h2>
+        </div>
+        <div class="module-grid">
+          <article>
+            <h3>Panel principal</h3>
+            <p>Resumen de proyectos, tareas, investigaciones recientes, actividad y documentos pendientes.</p>
+          </article>
+          <article>
+            <h3>Investigaciones cientificas</h3>
+            <p>Registro completo de hipotesis, metodos, resultados, comentarios, estados y archivos asociados.</p>
+          </article>
+          <article>
+            <h3>Biblioteca documental</h3>
+            <p>Gestion de libros, articulos, PDFs, etiquetas, referencias bibliograficas y metadatos.</p>
+          </article>
+          <article>
+            <h3>Notas tipo wiki</h3>
+            <p>Editor Markdown enriquecido, enlaces internos, historial de versiones y relacion entre ideas.</p>
+          </article>
+          <article>
+            <h3>Chat con IA</h3>
+            <p>Respuestas basadas en documentos almacenados, busqueda por contexto y apoyo para expandir conocimiento.</p>
+          </article>
+          <article>
+            <h3>Administracion</h3>
+            <p>Usuarios, permisos, OAuth, JWT, auditoria, configuracion del sistema y API documentada.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="arquitectura">
+        <div>
+          <p class="eyebrow">Arquitectura tecnica</p>
+          <h2>Escalable, segura y lista para evolucionar.</h2>
+          <p>
+            Aureonix Omega se propone como una aplicacion web moderna separada por responsabilidades: interfaz, API, base de
+            datos, busqueda semantica, cache, almacenamiento de archivos y servicios de inteligencia artificial.
+          </p>
+        </div>
+        <div class="stack-list">
+          <article>
+            <span>Frontend</span>
+            <p>React, Next.js, TypeScript y Tailwind CSS para una experiencia responsive y mantenible.</p>
+          </article>
+          <article>
+            <span>Backend</span>
+            <p>Python con FastAPI, API documentada, autenticacion OAuth + JWT y separacion modular por dominio.</p>
+          </article>
+          <article>
+            <span>Datos</span>
+            <p>PostgreSQL, pgvector para embeddings, Redis para cache y almacenamiento compatible con S3.</p>
+          </article>
+          <article>
+            <span>Operacion</span>
+            <p>Docker, pruebas basicas por modulo, documentacion tecnica y crecimiento preparado para miles de archivos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="investigacion">
+        <div class="section-heading compact">
+          <p class="eyebrow">Modelo de investigacion</p>
+          <h2>Estructura de datos cientifica.</h2>
+        </div>
+        <div class="research-layout">
+          <article>
+            <h3>Identidad</h3>
+            <p>Titulo, resumen, estado del proyecto, comentarios y archivos asociados.</p>
+          </article>
+          <article>
+            <h3>Marco cientifico</h3>
+            <p>Hipotesis, objetivos, materiales, metodos y referencias bibliograficas.</p>
+          </article>
+          <article>
+            <h3>Evidencia</h3>
+            <p>Resultados, discusion, conclusiones, historial de versiones y trazabilidad.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section quality-section" id="calidad">
+        <div class="section-heading compact">
+          <p class="eyebrow">Requisitos de calidad</p>
+          <h2>Buenas practicas desde el primer prototipo.</h2>
+        </div>
+        <div class="quality-grid">
+          <article>
+            <h3>Codigo modular</h3>
+            <p>Separacion por dominios: usuarios, documentos, investigaciones, proyectos, busqueda, IA y administracion.</p>
+          </article>
+          <article>
+            <h3>Pruebas basicas</h3>
+            <p>Cada modulo debe incluir pruebas unitarias o de integracion para proteger el crecimiento del sistema.</p>
+          </article>
+          <article>
+            <h3>Documentacion</h3>
+            <p>API documentada, guias de instalacion, decisiones de arquitectura y manual de mantenimiento.</p>
+          </article>
+          <article>
+            <h3>Seguridad</h3>
+            <p>Control de acceso por roles, autenticacion robusta, validacion de datos y manejo seguro de archivos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section upload-section" id="archivos">
+        <div class="upload-layout">
+          <div>
+            <p class="eyebrow">Carga y estructuracion</p>
+            <h2>Sube archivos y conviertelos en una ficha metodologica.</h2>
+            <p>
+              Esta herramienta lee archivos de texto, Markdown, CSV o JSON desde tu navegador y genera una estructura
+              inicial con la metodologia cientifica del proyecto. Los PDF y documentos complejos quedan registrados por
+              ahora como archivos pendientes de extraccion avanzada.
+            </p>
+          </div>
+          <form class="upload-panel" id="fileForm">
+            <label class="file-drop">
+              <span>Seleccionar archivos</span>
+              <input id="fileInput" type="file" multiple accept=".txt,.md,.csv,.json,.html,.pdf,.doc,.docx" />
+            </label>
+            <label>
+              Contexto del analisis
+              <textarea
+                id="fileContext"
+                rows="4"
+                placeholder="Ejemplo: revisar como investigacion cientifica, extraer objetivos y ordenar referencias"
+              ></textarea>
+            </label>
+            <button class="button primary" type="submit">Estructurar archivos</button>
+            <p class="form-status" id="fileStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="structured-panel">
+          <div class="records-empty" id="structuredEmpty">
+            Todavia no hay archivos estructurados. Sube un documento para generar la primera ficha metodologica.
+          </div>
+          <div class="structured-list" id="structuredList" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section ai-section" id="colaborador-ia">
+        <div class="ai-layout">
+          <div>
+            <p class="eyebrow">Colaborador IA</p>
+            <h2>Equipo IA multidisciplinario para investigacion avanzada.</h2>
+            <p>
+              Escribe una pregunta, una funcion que quieras mejorar o una busqueda de investigacion. El colaborador
+              revisa avances y archivos guardados, razona como equipo academico y propone recomendaciones con nivel de
+              maestria y doctorado.
+            </p>
+          </div>
+          <form class="ai-panel" id="aiForm">
+            <label>
+              Consulta para el colaborador
+              <textarea
+                id="aiQuery"
+                rows="5"
+                placeholder="Ejemplo: evalua esta linea de investigacion, detecta vacios teoricos y propone una ruta doctoral de desarrollo"
+                required
+              ></textarea>
+            </label>
+            <label>
+              Nivel de analisis
+              <select id="aiLevel">
+                <option value="maestria-doctorado">Maestria + Doctorado</option>
+                <option value="doctorado">Doctorado profundo</option>
+                <option value="maestria">Maestria aplicada</option>
+              </select>
+            </label>
+            <div class="ai-controls">
+              <button class="button primary" type="submit">Convocar equipo IA</button>
+              <button class="button secondary dark" type="button" id="clearAi">Limpiar respuesta</button>
+            </div>
+            <p class="form-status dark-status" id="aiStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="ai-output" id="aiOutput">
+          <div class="records-empty">
+            El colaborador IA local esta listo. Guarda avances o estructura archivos para que sus recomendaciones tengan mas contexto.
+          </div>
+        </div>
+      </section>
+
+      <section class="section database-section" id="base-local">
+        <div class="database-header">
+          <div>
+            <p class="eyebrow">Base de datos local</p>
+            <h2>Registros almacenados en este navegador.</h2>
+            <p>
+              Los avances que envies desde el formulario se guardan localmente en tu equipo. Esta base sirve como
+              prototipo inicial antes de migrar a PostgreSQL, FastAPI y autenticacion real.
+            </p>
+          </div>
+          <div class="database-actions" aria-label="Acciones de base local">
+            <button class="button secondary dark" type="button" id="exportData">Exportar JSON</button>
+            <button class="button danger" type="button" id="clearData">Limpiar base</button>
+          </div>
+        </div>
+        <div class="database-summary" aria-label="Resumen de datos locales">
+          <article>
+            <strong id="recordCount">0</strong>
+            <span>registros guardados</span>
+          </article>
+          <article>
+            <strong id="lastRecord">Sin datos</strong>
+            <span>ultimo avance</span>
+          </article>
+        </div>
+        <div class="records-panel">
+          <div class="records-empty" id="recordsEmpty">
+            Todavia no hay registros. Envia el formulario de la seccion siguiente para guardar el primer avance.
+          </div>
+          <div class="records-list" id="recordsList" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contacto">
+        <div>
+          <p class="eyebrow">Siguiente etapa</p>
+          <h2>Convierte Aureonix Omega en una aplicacion funcional.</h2>
+          <p>
+            Este sitio puede crecer hacia un prototipo real con dashboard, autenticacion, base de datos, API y modulos
+            iniciales para investigaciones, documentos y notas.
+          </p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>
+            Nombre
+            <input type="text" name="name" placeholder="Tu nombre" required />
+          </label>
+          <label>
+            Correo
+            <input type="email" name="email" placeholder="correo@institucion.edu" required />
+          </label>
+          <label>
+            Prioridad
+            <select name="interest">
+              <option>Definir arquitectura inicial</option>
+              <option>Crear prototipo de dashboard</option>
+              <option>Modelar base de datos</option>
+              <option>Preparar API con FastAPI</option>
+            </select>
+          </label>
+          <label>
+            Mensaje
+            <textarea name="message" rows="4" placeholder="Describe el siguiente avance que quieres construir"></textarea>
+          </label>
+          <button class="button primary" type="submit">Registrar avance</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Proyecto Aureonix Omega</span>
+      <span>Gestion del conocimiento cientifico, IA e investigacion escalable.</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
