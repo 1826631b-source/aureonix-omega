@@ -1,6 +1,7 @@
 // CONFIGURACIÓN: Reemplaza el texto de abajo con tu clave real entre las comillas
-const API_KEY = "AQ.Ab8R" + "N6LqWuDxXKwnr939fzC5wOczB2u2Q90gFLMzN_eBX_JIFw"; 
-const URL_GEMINI = `https://googleapis.com{API_KEY}`;
+const API_KEY = "AIzaSy" + "AQ.Ab8RN6LqWuDxXKwnr939fzC5wOczB2u2Q90gFLMzN_eBX_JIFw";
+const URL_GEMINI = https://googleapis.com{API_KEY};
+
 
 // Conexión con los elementos de la interfaz de usuario
 const btnBuscar = document.getElementById('ia-btn');
